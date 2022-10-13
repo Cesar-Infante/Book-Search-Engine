@@ -26,6 +26,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'))
 });
 
+/* It's using the routes from the routes folder. */
 app.use(routes);
 
 // Create a new instance of an Apollo server with the GraphQL schema
